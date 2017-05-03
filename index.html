@@ -1,168 +1,136 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <meta name="author" content="Igor Jelen">
+    <title>Igor Jelen, web developer - Portfolio</title>
     <link rel="stylesheet" href="css/app.css">
+    <base target="_blank">
+    <script> 
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-98336763-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
+    <header>
+      <div class="wrap">
+        <h1>Igor Jelen<br>
+        web developer
+        </h1>
+        <p>Hi, I'm Igor.<br> 
+          It's been a long time since I started building websites as a freelancer. Spacer gifs and table-based layout were popular back then. For more than 10 years I've been building custom-designed websites by myself, from initial client interview through design, coding and CMS integration to client training.</p>
+          <p>Now I want to become a part of a web development team and focus on what I'm best at - frontend development.</p>
+      </div>   
+    </header>
+    <section class="skills wrap">
+      <h2>My skills</h2>
+      <ul>
+        <li>Excellent experience with <b>HTML5</b>, <b>CSS3</b> (via <b>Sass</b>), <b>JavaScript</b> (Ajax, jQuery, ES6)</li>
+        <li>Working knowledge of <b>ReactJS</b></li>
+        <li>Responsive web design using <b>Zurb Foundation</b> with Gulp (ability to hand-code layouts as well)</li>
+        <li>Experience with <b>SVG</b> images</li>
+        <li>Excellent experience with <b>ExpressionEngine</b> (10+ websites)</li> 
+        <li>Experience with <b>Wordpress</b> theme developement</li>
+        <li>Working knowledge of <b>PHP</b> and <b>MySQL</b></li>
+        <li><b>Command line tools</b> (Cmder, Git Bash)</li>     
+        <li>Node.js based workflow tools (<b>npm</b>, <b>Bower</b>, <b>Grunt</b>, <b>Gulp</b>...)</li>     
+        <li>Basic experience with testing framework <b>Jasmine</b></li>
+        <li>Version control with <b>Git</b></li>
+        <li>Experience with <b>Vagrant</b> for development enviroment (<a href="https://github.com/Varying-Vagrant-Vagrants/VVV">VVV</a> for Wordpress)</li>
+        <li>Excellent experience with <b>typography</b> (using Adobe InDesign)</li>
+        <li>Skilled at using Adobe Suite (<b>Photoshop</b>, <b>Illustrator</b>, <b>InDesign</b>, <b>Experience Design</b>)</li>
+      </ul>
+    </section>
+    <section class="works wrap">
+      <h2>My works</h2>
+      <figure>
+        <div class="work">
+          <img src="img/udk.png" alt="Učenički dom Križevci">
+          <figcaption>
+            <div>
+              <p><a href="http://vrtuljak.com/udk/">Učenički dom Križevci</a> <i>(waiting client approval before WordPress integration, <a href="https://github.com/ijelen/udk">GitHub Repo</a>)</i> - responsive web design, Ajax, external APIs (wunderground.com, cloudinary.com, mapbox.com)</p>
+            </div>
+          </figcaption>
+        </div>
+        <div class="work">
+          <img src="img/radio_vrbovec.png" alt="Radio Vrbovec">
+          <figcaption>
+            <div>
+              <p><a href="http://radiovrbovec.hr/">Radio Vrbovec</a> – responsive web design, ExpressionEngine integration, client training, Ajax</p>    
+            </div>
+          </figcaption>
+        </div>
+        <div class="work">
+          <img src="img/lovrak.png" alt="Lovrak">
+          <figcaption>
+            <div>
+              <p><a href="http://lovrak.hr/">Lovrak.hr</a> – responsive web design optimized for slow internet connection (Lazy loading images, <a href="https://github.com/bramstein/fontfaceobserver">Font Face Observer</a> to prevent <abbr title="Flash of Invisible Text">FOIT</abbr>)</p>
+            </div>
+          </figcaption>
+        </div>
+        <div class="work">
+          <img src="img/nkv.jpg" alt="Narodna knjižnica Vrbovec">
+          <figcaption>
+            <div>
+              <p><a href="http://www.nkv.hr/">Narodna knjižnica Vrbovec</a> - ExpressionEngine integration</p>
+            </div>
+          </figcaption>
+        </div>
+        <div class="work">
+          <img src="img/monografija.jpg" alt="Monografija Srednje škole Vrbovec">
+          <figcaption>
+            <div>
+              <p>Monograph on my home town high school (excerpt, <a href="http://tinyurl.com/qbong8t">pdf</a>). Adobe InDesign, Adobe Photoshop</p>
+            </div>
+          </figcaption>
+        </div>
+        <div class="work">
+          <img src="img/poster.jpg" alt="Enrollment poster">
+          <figcaption>
+            <div>
+              <p>The enrollment poster and the logo for my home town high school (<a href="https://www.dropbox.com/s/7rbk8ssqi77aadh/B2_3.pdf?dl=0">pdf</a>). Adobe InDesign, Adobe Illustrator, Adobe Photoshop</p>
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+    </section>
+    <footer class="wrap">
+      <h2>My contact</h2>
+      <ul>
+        <li><a href="mailto:igorjelen@gmail.com">e-mail</a></li>
+        <li><a href="http://linkedin.com/in/igorjelen">in</a></li>
+        <li><a href="https://github.com/ijelen">GitHub</a></li>
+        <li><a href="http://www.vrtuljak.com/CV_Igor_Jelen_Frontend_Developer.pdf">CV</a></li>
+
+      </ul>
+
+    </footer>
     
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>       
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>           
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
-
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/dist/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $(".work").click(function(){
+          var divWork = $(this);
+          if (divWork.hasClass("active")) {
+            divWork.removeClass("active").find("figcaption").css("height", "0");
+            setTimeout(function(){divWork.find("figcaption").css("height", "")}, 1000);
+          }
+          else {
+            divWork.addClass("active");
+          }
+        })
+      })
+    </script>
   </body>
 </html>

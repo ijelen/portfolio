@@ -1,51 +1,200 @@
-@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,600i&subset=latin-ext');
 
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+$leftColumnWidth: 25%;
+$bodyBackground: #F1F0EC;
+$bodyColor: #555;
+$headerBackground: #505C67;
+$headerColor: #afb1b3;
+$fontSize: 1.8rem;
+$fontSizeMobile: 1.4rem;
 
-@include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
-@include foundation-typography;
-@include foundation-button;
-@include foundation-forms;
-// @include foundation-range-input;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
-@include foundation-breadcrumbs;
-@include foundation-button-group;
-@include foundation-callout;
-@include foundation-card;
-@include foundation-close-button;
-@include foundation-menu;
-@include foundation-menu-icon;
-@include foundation-drilldown-menu;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-responsive-embed;
-@include foundation-label;
-@include foundation-media-object;
-@include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-// @include foundation-progress-element;
-// @include foundation-meter-element;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
-@include foundation-tabs;
-@include foundation-thumbnail;
-@include foundation-title-bar;
-@include foundation-tooltip;
-@include foundation-top-bar;
-@include foundation-visibility-classes;
-@include foundation-float-classes;
-// @include foundation-flex-classes;
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*, *:after, *:before  {box-sizing: inherit;}
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: $fontSizeMobile;
+	@media screen and (min-width: 450px) {
+		font-size: $fontSize;
+	}
+	font-weight: 300;
+	background: $bodyBackground;
+	color: $bodyColor;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	max-width: 900px;
+	margin: 0 auto; 
+	position: relative;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+
+/* Text */
+
+h1 {
+	margin: 0; 
+	font-size: $fontSizeMobile;
+	@media screen and (min-width: 450px) {
+		font-size: $fontSize;
+	}
+	font-weight: 300;
+	color: #D27539;
+	float: left;
+	width: $leftColumnWidth;
+	transform-origin: top left;
+	transform: translateY(-20px);
+	&::before {
+		content: "{";
+		height: 20px;
+		width: 20px;
+		transform: translateX(-8px) translateY(-3px) rotate(-90deg);
+		display: block;
+		font-size: 23px;
+	}
+}
+h2 {
+	margin: 0; 
+	font-size: $fontSizeMobile;
+	@media screen and (min-width: 450px) {
+		font-size: $fontSize;
+	}
+	font-weight: 300;
+	line-height: 1.1em;
+	float: left;
+	width: $leftColumnWidth;
+}
+
+p {margin: 0 0 1em 0}
+
+a {color: #007eff;}
+a:visited {color: #65b1ff}
+b {
+	font-weight: 600;
+	color: lighten($bodyColor, 10%);
+}
+ul {margin: 0;}
+img {max-width: 100%; display: block;}
+
+header {
+	padding: 35px 0;
+	@media screen and (min-width: 450px) {
+		padding: 65px 0;
+	}
+	background: $headerBackground;
+	color: $headerColor;
+	p {
+		padding-left: $leftColumnWidth;
+		margin: 0;
+	}
+}
+section {
+	padding: 35px 0;
+	@media screen and (min-width: 450px) {
+		padding: 65px 0;
+	}
+	&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	padding: 65px 0;
+	ul {padding-left: $leftColumnWidth}
+	li {
+		list-style-type: circle;
+		margin-left: 17px;
+	}
+	figure {
+		margin: 0;
+		display: block;
+		padding: 0 0 0 $leftColumnWidth;
+		& > div {
+				margin-bottom: 20px;
+				position: relative;
+			}
+		@media screen and (min-width: 550px) {
+			&::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			& > div {
+				float: left; 
+				width: calc(50% - 10px);
+				margin-bottom: 20px;
+				position: relative;
+			}
+			& > div:nth-child(even) {
+				margin-left: 10px
+			}
+			& > div:nth-child(odd) {
+				margin-right: 10px
+			}
+		}
+		div:hover figcaption, div_:active figcaption, div.active figcaption {height: 100%}
+	}
+}
+
+figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 0;
+	overflow: hidden;
+	transition: .3s all;
+	background: lighten($headerBackground, 5%);
+	color: $headerColor;
+	@media screen and (min-width: 550px) and (max-width: 600px) {
+		font-size: 12px;
+	}
+	@media screen and (min-width: 601px) and (max-width: 800px) {
+		font-size: 13px;
+	}
+	div {
+		padding: 7px;
+		a:link, a:visited {color: lighten($headerColor, 15%)}
+	}
+}
+footer {
+	padding: 35px 0;
+	@media screen and (min-width: 450px) {
+		padding: 65px 0;
+	}
+	ul {padding-left: $leftColumnWidth}
+	li {
+		list-style: none;
+		width: 49%;
+		margin-bottom: 10px;
+		@media screen and (min-width: 450px) {
+			width: 24%;
+		}
+		display: inline-block;
+		a:link, a:visited {
+			background: lighten($headerBackground, 5%);
+			width: 80%;
+			display: block;
+			text-align: center;
+			border-radius: 3px;
+			color: lighten($headerColor, 10%);
+			text-decoration: none;
+
+		}
+	}
+}
+
+.skills a {
+	color: $bodyColor;
+}
+.works {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
